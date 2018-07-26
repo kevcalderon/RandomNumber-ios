@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomNumberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina el número." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmS-YQ-2hd">
+                                <rect key="frame" x="0.0" y="28" width="375" height="52.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cmS-YQ-2hd" secondAttribute="height" multiplier="207:29" id="BUY-vT-nbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intentos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvl-w1-T27">
+                                <rect key="frame" x="72" y="159" width="97" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vvl-w1-T27" secondAttribute="height" multiplier="3:1" id="5Cp-0T-XXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina el número del 0-9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEo-n2-iFb">
+                                <rect key="frame" x="10" y="245.5" width="355" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AEo-n2-iFb" secondAttribute="height" multiplier="197:31" id="FjE-Sg-2DY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dv7-D1-dsb">
+                                <rect key="frame" x="10" y="95.5" width="355" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dv7-D1-dsb" secondAttribute="height" multiplier="109:10" id="Zwg-LW-2pe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rP-eI-XuP">
+                                <rect key="frame" x="70" y="341.5" width="235" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8rP-eI-XuP" secondAttribute="height" multiplier="88:21" id="Yk7-Nf-z99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                <state key="normal" title="Adivinar" backgroundImage="buttonDemo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.26274509800000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="validarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRV-Vy-45l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ege-5l-NTk">
+                                <rect key="frame" x="255" y="164" width="10" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ege-5l-NTk" secondAttribute="height" multiplier="10:21" id="Anm-u7-Taj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dv7-D1-dsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0dk-Re-35g"/>
+                            <constraint firstItem="ege-5l-NTk" firstAttribute="leading" secondItem="Vvl-w1-T27" secondAttribute="trailing" constant="86" id="2c4-hg-6J0"/>
+                            <constraint firstItem="cmS-YQ-2hd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cpv-ZX-BLV"/>
+                            <constraint firstItem="dv7-D1-dsb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DUl-it-iZo"/>
+                            <constraint firstItem="cmS-YQ-2hd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="DnH-yj-K2F"/>
+                            <constraint firstItem="ege-5l-NTk" firstAttribute="top" secondItem="dv7-D1-dsb" secondAttribute="bottom" constant="36" id="HUG-rh-Qxa"/>
+                            <constraint firstItem="AEo-n2-iFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J65-0K-yAK"/>
+                            <constraint firstItem="cmS-YQ-2hd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KbI-8b-E5E"/>
+                            <constraint firstItem="8rP-eI-XuP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Kh6-cw-iNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8rP-eI-XuP" secondAttribute="trailing" constant="70" id="LGD-e0-1Vc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cmS-YQ-2hd" secondAttribute="trailing" id="PFb-85-28i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AEo-n2-iFb" secondAttribute="trailing" id="Phg-Aa-JMf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dv7-D1-dsb" secondAttribute="trailing" constant="10" id="Sfb-ij-F4f"/>
+                            <constraint firstItem="AEo-n2-iFb" firstAttribute="top" secondItem="Vvl-w1-T27" secondAttribute="bottom" constant="54" id="XAd-U2-C5z"/>
+                            <constraint firstItem="AEo-n2-iFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Xw6-vr-DIE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ege-5l-NTk" secondAttribute="trailing" constant="110" id="YpP-kB-COJ"/>
+                            <constraint firstItem="8rP-eI-XuP" firstAttribute="top" secondItem="AEo-n2-iFb" secondAttribute="bottom" constant="40" id="l9C-fC-JX4"/>
+                            <constraint firstItem="dv7-D1-dsb" firstAttribute="top" secondItem="cmS-YQ-2hd" secondAttribute="bottom" constant="15" id="lsE-tj-yQb"/>
+                            <constraint firstItem="Vvl-w1-T27" firstAttribute="top" secondItem="dv7-D1-dsb" secondAttribute="bottom" constant="31" id="piG-7C-aBk"/>
+                            <constraint firstItem="Vvl-w1-T27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="ySH-Wq-UOl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="intentosLbl" destination="ege-5l-NTk" id="MJA-it-gZR"/>
+                        <outlet property="mensajeLbl" destination="AEo-n2-iFb" id="pih-Td-lIK"/>
+                        <outlet property="numberTxt" destination="dv7-D1-dsb" id="1Te-28-phh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.5" y="132.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonDemo" width="600" height="192"/>
+    </resources>
+</document>
